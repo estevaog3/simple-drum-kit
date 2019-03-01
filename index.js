@@ -5,8 +5,6 @@ function addPlayingEffect(pressedKey){
 
 function removePlayingEffect(){
     this.classList.remove('playing');
-    //test
-    console.log("the playing effect was removed");
 }
 
 function playTheDrum(event){
