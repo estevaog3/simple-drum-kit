@@ -1,0 +1,39 @@
+html {
+    background: url(https://diariopb.com.br/wp-content/uploads/2015/06/rock-banda.jpg);
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body, html{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+span {
+    font-size: 3rem;
+}
+
+div {
+    color: white;
+    text-align: center;
+    transition: all 0.03s;
+    text-shadow: 0 0 6px black;
+}
+
+.key{
+    margin: auto;
+    width: 100px;
+    border: 0.8rem solid black;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 6px black;
+    padding: 0.2%;
+}
+.playing{
+    transform: scale(1.1);
+    text-shadow: 0 0 6px red;
+    box-shadow: 0 0 6px red;
+}
