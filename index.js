@@ -1,5 +1,5 @@
 function addPlayingEffect(pressedKey){
-    let key = document.querySelector('div.'+pressedKey);
+    let key = document.querySelector('.key.js-key--'+pressedKey);
     key.classList.add('playing');
 }
 
@@ -9,7 +9,7 @@ function removePlayingEffect(){
 
 function playTheDrum(event){
     let pressedKey = event.key;
-    let audioChosen = document.querySelector("audio."+ pressedKey);
+    let audioChosen = document.querySelector("audio.js-key--"+ pressedKey);
     if(audioChosen){
         let audioSource = new Audio(audioChosen.getAttribute('src'));
         audioSource.play();
@@ -19,5 +19,5 @@ function playTheDrum(event){
 
 window.addEventListener('keypress', playTheDrum);
 
-const keys = document.querySelectorAll("#key");
+const keys = document.querySelectorAll(".key");
 keys.forEach(key => key.addEventListener('transitionend', removePlayingEffect));
