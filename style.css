@@ -11,18 +11,18 @@ body, html{
     font-family: sans-serif;
 }
 
-span {
+.key-indicator {
     font-size: 3rem;
 }
 
-div {
+.keys {
     color: white;
     text-align: center;
-    transition: all 0.03s;
     text-shadow: 0 0 6px black;
 }
 
 .key{
+    transition: all 0.03s;
     margin: auto;
     width: 100px;
     border: 0.8rem solid black;
@@ -32,6 +32,7 @@ div {
     box-shadow: 0 0 6px black;
     padding: 0.2%;
 }
+
 .playing{
     transform: scale(1.1);
     text-shadow: 0 0 6px red;
